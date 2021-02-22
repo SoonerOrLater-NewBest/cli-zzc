@@ -28,38 +28,88 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`cli-zzc add`](#cli-zzc-add)
-* [`cli-zzc advice`](#cli-zzc-advice)
+* [`cli-zzc demo:add`](#cli-zzc-demoadd)
+* [`cli-zzc demo:advice`](#cli-zzc-demoadvice)
+* [`cli-zzc demo:remove`](#cli-zzc-demoremove)
+* [`cli-zzc demo:show`](#cli-zzc-demoshow)
+* [`cli-zzc demo:update`](#cli-zzc-demoupdate)
 * [`cli-zzc help [COMMAND]`](#cli-zzc-help-command)
-* [`cli-zzc lint [FILE]`](#cli-zzc-lint-file)
-* [`cli-zzc remove`](#cli-zzc-remove)
-* [`cli-zzc show`](#cli-zzc-show)
-* [`cli-zzc update`](#cli-zzc-update)
 
-## `cli-zzc add`
+## `cli-zzc demo:add`
 
 Add a new todo
 
 ```
 USAGE
-  $ cli-zzc add
+  $ cli-zzc demo:add
 
 OPTIONS
   -n, --task=task  task
 ```
 
-_See code: [src/commands/add.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/add.ts)_
+_See code: [src/commands/demo/add.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/demo/add.ts)_
 
-## `cli-zzc advice`
+## `cli-zzc demo:advice`
 
 Shares an advice for you.
 
 ```
 USAGE
-  $ cli-zzc advice
+  $ cli-zzc demo:advice
 ```
 
-_See code: [src/commands/advice.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/advice.ts)_
+_See code: [src/commands/demo/advice.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/demo/advice.ts)_
+
+## `cli-zzc demo:remove`
+
+Removes a task by id
+
+```
+USAGE
+  $ cli-zzc demo:remove
+
+OPTIONS
+  -n, --id=id  (required) task id
+
+DESCRIPTION
+  ...
+  Removes a task permanently from database by id
+```
+
+_See code: [src/commands/demo/remove.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/demo/remove.ts)_
+
+## `cli-zzc demo:show`
+
+Shows existing tasks
+
+```
+USAGE
+  $ cli-zzc demo:show
+
+DESCRIPTION
+  ...
+  Show all the tasks sorted by their ids
+```
+
+_See code: [src/commands/demo/show.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/demo/show.ts)_
+
+## `cli-zzc demo:update`
+
+Marks a task as done
+
+```
+USAGE
+  $ cli-zzc demo:update
+
+OPTIONS
+  -n, --id=id  task id
+
+DESCRIPTION
+  ...
+     Marks a task as done
+```
+
+_See code: [src/commands/demo/update.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/demo/update.ts)_
 
 ## `cli-zzc help [COMMAND]`
 
@@ -77,71 +127,4 @@ OPTIONS
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v3.2.0/src/commands/help.ts)_
-
-## `cli-zzc lint [FILE]`
-
-describe the command here
-
-```
-USAGE
-  $ cli-zzc lint [FILE]
-
-OPTIONS
-  -f, --force
-  -h, --help       show CLI help
-  -n, --name=name  name to print
-```
-
-_See code: [src/commands/lint.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/lint.ts)_
-
-## `cli-zzc remove`
-
-Removes a task by id
-
-```
-USAGE
-  $ cli-zzc remove
-
-OPTIONS
-  -n, --id=id  (required) task id
-
-DESCRIPTION
-  ...
-  Removes a task permanently from database by id
-```
-
-_See code: [src/commands/remove.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/remove.ts)_
-
-## `cli-zzc show`
-
-Shows existing tasks
-
-```
-USAGE
-  $ cli-zzc show
-
-DESCRIPTION
-  ...
-  Show all the tasks sorted by their ids
-```
-
-_See code: [src/commands/show.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/show.ts)_
-
-## `cli-zzc update`
-
-Marks a task as done
-
-```
-USAGE
-  $ cli-zzc update
-
-OPTIONS
-  -n, --id=id  task id
-
-DESCRIPTION
-  ...
-     Marks a task as done
-```
-
-_See code: [src/commands/update.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/update.ts)_
 <!-- commandsstop -->
