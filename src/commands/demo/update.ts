@@ -1,5 +1,5 @@
 import {Command, flags} from '@oclif/command'
-import {Todos} from '../db'
+import {Todos} from '../../libs/db'
 export default class Update extends Command {
   static description = `Marks a task as done
   ...

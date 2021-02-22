@@ -1,5 +1,5 @@
 import {Command} from '@oclif/command'
-import {TaskService} from '../requests/task'
+import {TaskService} from '../../requests/task'
 
 import {hostname} from 'os'
 import chalk from 'chalk'

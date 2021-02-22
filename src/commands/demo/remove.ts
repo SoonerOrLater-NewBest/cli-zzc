@@ -1,5 +1,5 @@
 import {Command, flags} from '@oclif/command'
-import {Todos} from '../db'
+import {Todos} from '../../libs/db'
 
 export default class Remove extends Command {
 static description = `Removes a task by id

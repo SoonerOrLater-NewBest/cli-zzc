@@ -1,6 +1,6 @@
 import {Command, flags} from '@oclif/command'
 import chalk from 'chalk'
-import {Todos} from '../db'
+import {Todos} from '../../libs/db'
 export default class Show extends Command {
 static description = `Shows existing tasks
 ...
