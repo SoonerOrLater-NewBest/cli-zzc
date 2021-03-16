@@ -13,12 +13,18 @@
     "@oclif/plugin-help": "^3.2.0",
     "lowdb": "^1.0.0",
     "node-fetch": "^2.6.1",
+    "ejs": "^3.1.5",
+    "shelljs": "^0.8.4",
+    "inquirer": "^7.3.3",
     "tslib": "^1.14.1"
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.25.1",
     "@types/lowdb": "^1.0.9",
     "@types/node": "^10.17.48",
+    "@types/ejs": "^3.0.5",
+    "@types/inquirer": "^7.3.1",
+    "@types/shelljs": "^0.8.8",
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
     "eslint-config-oclif-typescript": "^0.1.0",
