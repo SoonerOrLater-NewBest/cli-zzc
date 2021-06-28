@@ -11,11 +11,12 @@
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.0",
-    "lowdb": "^1.0.0",
-    "node-fetch": "^2.6.1",
     "ejs": "^3.1.5",
-    "shelljs": "^0.8.4",
     "inquirer": "^7.3.3",
+    "lowdb": "^1.0.0",
+    "mime-types": "^2.1.31",
+    "node-fetch": "^2.6.1",
+    "shelljs": "^0.8.4",
     "tslib": "^1.14.1"
   },
   "devDependencies": {
