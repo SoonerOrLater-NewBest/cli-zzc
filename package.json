@@ -21,10 +21,11 @@
   },
   "devDependencies": {
     "@oclif/dev-cli": "^1.25.1",
-    "@types/lowdb": "^1.0.9",
-    "@types/node": "^10.17.48",
     "@types/ejs": "^3.0.5",
     "@types/inquirer": "^7.3.1",
+    "@types/lowdb": "^1.0.9",
+    "@types/mime-types": "^2.1.0",
+    "@types/node": "^10.17.48",
     "@types/shelljs": "^0.8.8",
     "eslint": "^5.16.0",
     "eslint-config-oclif": "^3.1.0",
