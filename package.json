@@ -12,6 +12,8 @@
     "@oclif/config": "^1.17.0",
     "@oclif/plugin-help": "^3.2.0",
     "ejs": "^3.1.5",
+    "imageinfo": "^1.0.4",
+    "images": "^3.2.3",
     "inquirer": "^7.3.3",
     "lowdb": "^1.0.0",
     "mime-types": "^2.1.31",
