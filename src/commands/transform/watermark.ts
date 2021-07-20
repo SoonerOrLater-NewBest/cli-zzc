@@ -54,7 +54,7 @@ export default class Watermark extends Command {
         write: flags.string({
             char: 'w',
             default: '/saveImg/',
-            description: '水印图片保存路径（默认在同目录下的/saveImg/中）',
+            description: '保存路径用//包裹（默认在同目录下的/saveImg/中）',
         }),
     };
 
@@ -75,7 +75,7 @@ export default class Watermark extends Command {
         const { watermarkImgPath, imgFilePath } = args;
         const watermarkImg = images(path.resolve(watermarkImgPath));
         const stat = fs.statSync(path.resolve(imgFilePath));
-        const saveDir = path.resolve(imgFilePath, '../') + '/saveImg/';
+        const saveDir = path.resolve(imgFilePath, '../') + flags.write;
         if (fs.existsSync(saveDir) && !flags.force) {
             this.error('dir already exist; add --force to cover dir');
         }
