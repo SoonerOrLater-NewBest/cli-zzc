@@ -65,7 +65,7 @@ OPTIONS
   -h, --help  选择模版框架：common,fusion,antd,uni-app
 ```
 
-_See code: [src/commands/tpl/list.ts](https://github.com/workspace/cli-zzc/blob/v0.0.1/src/commands/tpl/list.ts)_
+_See code: [src/commands/tpl/list.ts](https://github.com/SoonerOrLater-NewBest/cli-zzc/blob/v0.0.1/src/commands/tpl/list.ts)_
 
 ## `cli-zzc tpl:load NAME`
 
@@ -81,7 +81,7 @@ OPTIONS
   -h, --help                              show CLI help
 ```
 
-_See code: [src/commands/tpl/load.ts](https://github.com/workspace/cli-zzc/blob/v0.0.1/src/commands/tpl/load.ts)_
+_See code: [src/commands/tpl/load.ts](https://github.com/SoonerOrLater-NewBest/cli-zzc/blob/v0.0.1/src/commands/tpl/load.ts)_
 
 ## `cli-zzc tpl:sourceDir`
 
@@ -92,7 +92,7 @@ USAGE
   $ cli-zzc tpl:sourceDir
 ```
 
-_See code: [src/commands/tpl/sourceDir.ts](https://github.com/workspace/cli-zzc/blob/v0.0.1/src/commands/tpl/sourceDir.ts)_
+_See code: [src/commands/tpl/sourceDir.ts](https://github.com/SoonerOrLater-NewBest/cli-zzc/blob/v0.0.1/src/commands/tpl/sourceDir.ts)_
 
 ## `cli-zzc tpl:update NAME`
 
@@ -106,7 +106,7 @@ OPTIONS
   -h, --help  show CLI help
 ```
 
-_See code: [src/commands/tpl/update.ts](https://github.com/workspace/cli-zzc/blob/v0.0.1/src/commands/tpl/update.ts)_
+_See code: [src/commands/tpl/update.ts](https://github.com/SoonerOrLater-NewBest/cli-zzc/blob/v0.0.1/src/commands/tpl/update.ts)_
 
 ## `cli-zzc transform:base64 FILEPATH`
 
@@ -121,7 +121,7 @@ OPTIONS
   -w, --write  将base64数据写入文件（同输入文件路径）
 ```
 
-_See code: [src/commands/transform/base64.ts](https://github.com/workspace/cli-zzc/blob/v0.0.1/src/commands/transform/base64.ts)_
+_See code: [src/commands/transform/base64.ts](https://github.com/SoonerOrLater-NewBest/cli-zzc/blob/v0.0.1/src/commands/transform/base64.ts)_
 
 ## `cli-zzc transform:watermark WATERMARK IMGPATH`
 
@@ -137,5 +137,5 @@ OPTIONS
   -w, --write=write  [default: /saveImg/] 保存路径用//包裹（默认在同目录下的/saveImg/中）
 ```
 
-_See code: [src/commands/transform/watermark.ts](https://github.com/workspace/cli-zzc/blob/v0.0.1/src/commands/transform/watermark.ts)_
+_See code: [src/commands/transform/watermark.ts](https://github.com/SoonerOrLater-NewBest/cli-zzc/blob/v0.0.1/src/commands/transform/watermark.ts)_
 <!-- commandsstop -->

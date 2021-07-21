@@ -6,7 +6,7 @@
   "bin": {
     "cli-zzc": "./bin/run"
   },
-  "bugs": "https://github.com/workspace/cli-zzc/issues",
+  "bugs": "https://github.com/SoonerOrLater-NewBest/cli-zzc/issues",
   "dependencies": {
     "@oclif/command": "^1.8.0",
     "@oclif/config": "^1.17.0",
@@ -46,7 +46,7 @@
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
-  "homepage": "https://github.com/workspace/cli-zzc",
+  "homepage": "https://github.com/SoonerOrLater-NewBest/cli-zzc",
   "keywords": [
     "oclif"
   ],
@@ -59,7 +59,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "workspace/cli-zzc",
+  "repository": "SoonerOrLater-NewBest/cli-zzc",
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
