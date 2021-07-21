@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch, { Body } from 'node-fetch';
 
 export interface Task {
     id: string;
@@ -31,8 +31,8 @@ export interface Result {
     status: number;
 }
 export class TaskService {
-    static getTaskList(): Result {
+    static getTaskList() {
         // const todos = await Todos.sortBy('id').value()
-        return fetch('http://localhost:8888/api/tasks').then((res) => res.json());
+        return fetch('http://localhost:8888/api/tasks').then((res: Body) => res.json());
     }
 }

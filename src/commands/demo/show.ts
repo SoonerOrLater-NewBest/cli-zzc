@@ -1,4 +1,4 @@
-import { Command, flags } from '@oclif/command';
+import { Command } from '@oclif/command';
 import chalk from 'chalk';
 import { Todos } from '../../requests/db';
 export default class Show extends Command {

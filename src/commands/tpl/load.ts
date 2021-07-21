@@ -56,7 +56,7 @@ export default class Load extends Command {
 
         this.initDir(destDir);
 
-        files.forEach((f: string | number | Buffer | import('url').URL) => {
+        files.forEach((f: string) => {
             const regex = new RegExp(`\\b${name}\\b`, 'g');
             const createFile = tpl
                 .getRelativeFilePath(group, name, f)
