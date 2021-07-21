@@ -59,7 +59,10 @@
       "@oclif/plugin-help"
     ]
   },
-  "repository": "cli-zzc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SoonerOrLater-NewBest/cli-zzc.git"
+  },
   "scripts": {
     "postpack": "rm -f oclif.manifest.json",
     "posttest": "eslint . --ext .ts --config .eslintrc",
