@@ -39,7 +39,7 @@ USAGE
 * [`cli-zzc tpl:sourceDir`](#cli-zzc-tplsourcedir)
 * [`cli-zzc tpl:update NAME`](#cli-zzc-tplupdate-name)
 * [`cli-zzc transform:base64 FILEPATH`](#cli-zzc-transformbase64-filepath)
-* [`cli-zzc transform:watermark WATERMARKIMGPATH IMGFILEPATH`](#cli-zzc-transformwatermark-watermarkimgpath-imgfilepath)
+* [`cli-zzc transform:watermark WATERMARK IMGPATH`](#cli-zzc-transformwatermark-watermark-imgpath)
 
 ## `cli-zzc demo:add`
 
@@ -204,13 +204,13 @@ OPTIONS
 
 _See code: [src/commands/transform/base64.ts](https://github.com/workspace/cli-zzc/blob/v0.0.0/src/commands/transform/base64.ts)_
 
-## `cli-zzc transform:watermark WATERMARKIMGPATH IMGFILEPATH`
+## `cli-zzc transform:watermark WATERMARK IMGPATH`
 
 图片批量添加水印
 
 ```
 USAGE
-  $ cli-zzc transform:watermark WATERMARKIMGPATH IMGFILEPATH
+  $ cli-zzc transform:watermark WATERMARK IMGPATH
 
 OPTIONS
   -f, --force

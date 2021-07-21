@@ -59,8 +59,8 @@ export default class Watermark extends Command {
     };
 
     static args = [
-        { name: 'watermarkImgPath', required: true },
-        { name: 'imgFilePath', required: true },
+        { name: 'watermark', required: true },
+        { name: 'imgPath', required: true },
     ];
 
     initDir(dir: string) {
@@ -72,17 +72,17 @@ export default class Watermark extends Command {
 
     async run() {
         const { args, flags } = this.parse(Watermark);
-        const { watermarkImgPath, imgFilePath } = args;
-        const watermarkImg = images(path.resolve(watermarkImgPath));
-        const stat = fs.statSync(path.resolve(imgFilePath));
-        const saveDir = path.resolve(imgFilePath, '../') + flags.write;
+        const { watermark, imgPath } = args;
+        const watermarkImg = images(path.resolve(watermark));
+        const stat = fs.statSync(path.resolve(imgPath));
+        const saveDir = path.resolve(imgPath, '../') + flags.write;
         if (fs.existsSync(saveDir) && !flags.force) {
             this.error('dir already exist; add --force to cover dir');
         }
         this.initDir(saveDir);
         if (stat.isDirectory()) {
             // this.log('批量处理文件夹下的图片');
-            const photosPath = path.resolve(imgFilePath) + '/';
+            const photosPath = path.resolve(imgPath) + '/';
             // 获取文件夹下的所有图片
             const photos = getFiles.getImageFiles(photosPath);
             for (let i = 0; i < photos.length; i++) {
@@ -100,8 +100,8 @@ export default class Watermark extends Command {
             }
         } else {
             // this.log('处理单张图片');
-            const sourceImg = images(imgFilePath);
-            const sourceImgName = path.basename(imgFilePath);
+            const sourceImg = images(imgPath);
+            const sourceImgName = path.basename(imgPath);
             const sWidth = sourceImg.width();
             const sHeight = sourceImg.height();
             const wmWidth = watermarkImg.width();
