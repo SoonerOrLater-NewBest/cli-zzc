@@ -10,7 +10,7 @@ export default class List extends Command {
     static flags = {
         help: flags.help({
             char: 'h',
-            description: `选择模版框架：${UiOptions.toString()}`,
+            description: '展示模板列表',
         }),
     };
 
@@ -19,6 +19,7 @@ export default class List extends Command {
             name: 'group',
             options: UiOptions,
             default: UiOptions[0],
+            description: '选择模版框架',
         },
     ];
 
