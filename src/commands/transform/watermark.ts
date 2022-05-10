@@ -5,7 +5,7 @@ const images = require('images');
 import { getFiles } from '../../utils/get-files';
 
 export default class Watermark extends Command {
-    static description = '图片批量添加水印';
+    static description = '图片批量添加水印，支持单文件或文件夹';
 
     static flags = {
         help: flags.help({ char: 'h' }),
